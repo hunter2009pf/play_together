@@ -27,7 +27,7 @@ class Login extends StatelessWidget{
                 var acc=accountController.text;
                 var pwd=passwordController.text;
                 if(acc=="admin" && pwd=="123456"){
-                  Navigator.pushNamed(context, "homePage");
+                  Navigator.pushReplacementNamed(context, "homePage");
                 }else{
                   showDialog(
                       context: context,
